@@ -1,0 +1,959 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* whatsapp_gulf_click
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-25 23:04+0000\n"
+"PO-Revision-Date: 2026-09-25 23:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid "05XXXXXXXX"
+msgstr "05XXXXXXXX"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_form
+msgid ""
+"<b>Placeholders</b><br/>\n"
+"                        {partner} {company} {doc} {amount} {residual} {due_date} {date} {link} {user}<br/>\n"
+"                        {العميل} {الشركة} {المستند} {المبلغ} {المتبقي} {الاستحقاق} {التاريخ} {الرابط} {الموظف}<br/>\n"
+"                        <b>WhatsApp formatting</b>: *bold* _italic_ ~strike~"
+msgstr ""
+"<b>المتغيرات</b><br/>\n"
+"                        {partner} {company} {doc} {amount} {residual} {due_date} {date} {link} {user}<br/>\n"
+"                        {العميل} {الشركة} {المستند} {المبلغ} {المتبقي} {الاستحقاق} {التاريخ} {الرابط} {الموظف}<br/>\n"
+"                        <b>تنسيق واتساب</b>: *عريض* _مائل_ ~مشطوب~"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid ""
+"<i class=\"fa fa-exclamation-triangle me-1\"/>\n"
+"                    <span>This does not look like a valid mobile number for the selected country. Please check it before sending.</span>"
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle me-1\"/>\n"
+"                    <span>يبدو أن هذا ليس رقم جوال صحيحًا للدولة المختارة. يرجى مراجعته قبل الإرسال.</span>"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid ""
+"<i class=\"fa fa-info-circle me-1\"/>\n"
+"                    <span>No mobile number was found for this contact. Type it below (local format is fine, e.g. 05XXXXXXXX).</span>"
+msgstr ""
+"<i class=\"fa fa-info-circle me-1\"/>\n"
+"                    <span>لم يُعثر على رقم جوال لجهة الاتصال. اكتبه بالأسفل (الصيغة المحلية مقبولة، مثل 05XXXXXXXX).</span>"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__active
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.actions.act_window,help:whatsapp_gulf_click.action_wa_gulf_document
+msgid "Add a document type"
+msgstr "أضف نوع مستند"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_open_mode__web
+msgid "Always WhatsApp Web"
+msgstr "واتساب ويب دائمًا"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.actions.act_window,help:whatsapp_gulf_click.action_wa_gulf_document
+msgid ""
+"Any model with a customer field can get the WhatsApp button, including "
+"custom models."
+msgstr ""
+"أي نموذج فيه حقل عميل يمكن أن يظهر فيه زر واتساب، بما في ذلك النماذج "
+"المخصصة."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_style__gulf
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__style__gulf
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__style__gulf
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_search
+msgid "Arabic (Gulf dialect)"
+msgstr "عربي (لهجة خليجية)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_style__msa
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__style__msa
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__style__msa
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_search
+msgid "Arabic (formal)"
+msgstr "عربي (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_form
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_search
+msgid "Archived"
+msgstr "مؤرشف"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_open_mode__wa_me
+msgid "Automatic (wa.me) - app on phones, choice on computers"
+msgstr "تلقائي (wa.me) — التطبيق في الجوال، والاختيار في الكمبيوتر"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__is_installed
+msgid "Available"
+msgstr "مثبّت"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model,name:whatsapp_gulf_click.model_base
+msgid "Base"
+msgstr "Base"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_crm_lead
+msgid "CRM Leads & Opportunities"
+msgstr "العملاء المحتملون والفرص"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model,name:whatsapp_gulf_click.model_res_config_settings
+msgid "Config Settings"
+msgstr "إعدادات التهيئة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__contact
+msgid "Contact / lead greeting"
+msgstr "تحية لجهة اتصال / عميل محتمل"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_contact_en
+msgid "Contact greeting (English)"
+msgstr "تحية لجهة اتصال (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_contact_gulf
+msgid "Contact greeting (Gulf)"
+msgstr "تحية لجهة اتصال (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_contact_msa
+msgid "Contact greeting (formal)"
+msgstr "تحية لجهة اتصال (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_res_partner
+msgid "Contacts"
+msgstr "جهات الاتصال"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__country_code
+msgid "Country"
+msgstr "الدولة"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Country assumed for local numbers such as 05XXXXXXXX"
+msgstr "الدولة المفترضة للأرقام المحلية مثل 05XXXXXXXX"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_res_config_settings__wa_gulf_default_country
+msgid ""
+"Country assumed for numbers typed without a country code when the contact "
+"has no country."
+msgstr ""
+"الدولة المفترضة للأرقام المكتوبة بدون مفتاح دولة إذا لم تكن لجهة الاتصال "
+"دولة."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__create_uid
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__create_uid
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__create_date
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__create_date
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__refund
+msgid "Credit note"
+msgstr "إشعار دائن"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_refund_en
+msgid "Credit note (English)"
+msgstr "إشعار دائن (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_refund_gulf
+msgid "Credit note (Gulf)"
+msgstr "إشعار دائن (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_refund_msa
+msgid "Credit note (formal)"
+msgstr "إشعار دائن (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__partner_field
+msgid "Customer Field"
+msgstr "حقل العميل"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_link_type__portal
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__link_type__portal
+msgid "Customer portal page"
+msgstr "صفحة بوابة العميل"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_res_config_settings__wa_gulf_default_country
+msgid "Default Country (WhatsApp)"
+msgstr "الدولة الافتراضية (واتساب)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_res_config_settings__wa_gulf_default_style
+msgid "Default Message Language"
+msgstr "لغة الرسالة الافتراضية"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid ""
+"Default style; contacts with an English language get English automatically"
+msgstr ""
+"الأسلوب الافتراضي؛ جهات الاتصال بلغة إنجليزية تحصل على الإنجليزية تلقائيًا"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_stock_picking
+msgid "Deliveries & Receipts"
+msgstr "التسليمات والاستلامات"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__delivery
+msgid "Delivery / shipment"
+msgstr "التسليم / الشحن"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_delivery_en
+msgid "Delivery on the way (English)"
+msgstr "الشحنة في الطريق (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_delivery_gulf
+msgid "Delivery on the way (Gulf)"
+msgstr "الشحنة في الطريق (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_delivery_msa
+msgid "Delivery on the way (formal)"
+msgstr "الشحنة في الطريق (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_link_type__pdf
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__link_type__pdf
+msgid "Direct PDF download"
+msgstr "رابط تحميل PDF مباشر"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__display_name
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__display_name
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__record_name
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__name
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid "Document"
+msgstr "المستند"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__res_id
+msgid "Document ID"
+msgstr "معرّف المستند"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_res_config_settings__wa_gulf_link_type
+msgid "Document Link"
+msgstr "رابط المستند"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__res_model
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__model_name
+msgid "Document Model"
+msgstr "نموذج المستند"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Document link"
+msgstr "رابط المستند"
+
+#. module: whatsapp_gulf_click
+#: model:ir.actions.act_window,name:whatsapp_gulf_click.action_wa_gulf_document
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_document_view_list
+msgid "Documents with WhatsApp Button"
+msgstr "المستندات التي يظهر فيها زر واتساب"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid ""
+"Edit the ready-made messages and choose which documents show the button"
+msgstr "عدّل الرسائل الجاهزة واختر المستندات التي يظهر فيها الزر"
+
+#. module: whatsapp_gulf_click
+#: model:ir.ui.menu,name:whatsapp_gulf_click.menu_wa_gulf_document
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Enabled Documents"
+msgstr "المستندات المفعّلة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_style__en
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__style__en
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__style__en
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_search
+msgid "English"
+msgstr "إنجليزي"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid "Formatting: *bold* _italic_ ~strike~"
+msgstr "التنسيق: *عريض* _مائل_ ~مشطوب~"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__any
+msgid "General / any document"
+msgstr "عام / أي مستند"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_any_en
+msgid "General greeting (English)"
+msgstr "تحية عامة (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_any_gulf
+msgid "General greeting (Gulf)"
+msgstr "تحية عامة (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_any_msa
+msgid "General greeting (formal)"
+msgstr "تحية عامة (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_received_en
+msgid "Goods received (English)"
+msgstr "تم استلام البضاعة (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_received_gulf
+msgid "Goods received (Gulf)"
+msgstr "تم استلام البضاعة (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_received_msa
+msgid "Goods received (formal)"
+msgstr "تم استلام البضاعة (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__has_link
+msgid "Has Link"
+msgstr "له رابط"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "How the chat is opened. No API, no subscription."
+msgstr "طريقة فتح المحادثة. بدون API وبدون اشتراك."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__id
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__id
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__id
+msgid "ID"
+msgstr "المعرّف"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__invoice_open
+msgid "Invoice ready"
+msgstr "الفاتورة جاهزة"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_open_en
+msgid "Invoice ready (English)"
+msgstr "الفاتورة جاهزة (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_open_gulf
+msgid "Invoice ready (Gulf)"
+msgstr "الفاتورة جاهزة (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_open_msa
+msgid "Invoice ready (formal)"
+msgstr "الفاتورة جاهزة (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_account_move
+msgid "Invoices & Credit Notes"
+msgstr "الفواتير والإشعارات الدائنة"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Keep a note in the document chatter each time a message is sent"
+msgstr "تسجيل ملاحظة في سجل المستند عند كل إرسال"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__style
+msgid "Language"
+msgstr "اللغة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__style
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_search
+msgid "Language Style"
+msgstr "أسلوب اللغة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__write_uid
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__write_uid
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__write_date
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__write_date
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__link_type
+msgid "Link"
+msgstr "الرابط"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Link added to invoices, quotations and orders"
+msgstr "الرابط المضاف إلى الفواتير وعروض الأسعار والطلبات"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_res_config_settings__wa_gulf_log_chatter
+msgid "Log Sent Messages in Chatter"
+msgstr "تسجيل الرسائل المرسلة في السجل"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__log_note
+msgid "Log in chatter"
+msgstr "تسجيل في السجل"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_wa_gulf_document__partner_field
+msgid ""
+"Many2one field pointing to the contact (res.partner). Leave empty for the "
+"Contacts model itself."
+msgstr ""
+"حقل Many2one يشير إلى جهة الاتصال (res.partner). اتركه فارغًا لنموذج جهات "
+"الاتصال نفسه."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__body
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__body
+msgid "Message"
+msgstr "الرسالة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__message_key
+msgid "Message Key"
+msgstr "مفتاح الرسالة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.ui.menu,name:whatsapp_gulf_click.menu_wa_gulf_template
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Message Templates"
+msgstr "قوالب الرسائل"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Message language"
+msgstr "لغة الرسالة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__phone
+msgid "Mobile"
+msgstr "الجوال"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Numbers"
+msgstr "الأرقام"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid "Open WhatsApp"
+msgstr "فتح واتساب"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_res_config_settings__wa_gulf_open_mode
+msgid "Open WhatsApp With"
+msgstr "فتح واتساب عبر"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Open with"
+msgstr "الفتح عبر"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_wa_gulf_document__phone_field
+msgid ""
+"Optional: a phone field stored on the document itself (e.g. 'phone' on CRM "
+"leads). It is tried before the contact's numbers."
+msgstr ""
+"اختياري: حقل هاتف موجود في المستند نفسه (مثل 'phone' في العملاء المحتملين)، "
+"ويُجرَّب قبل أرقام جهة الاتصال."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__sale_confirmed
+msgid "Order confirmed"
+msgstr "تأكيد الطلب"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_sale_confirmed_en
+msgid "Order confirmed (English)"
+msgstr "تأكيد الطلب (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_sale_confirmed_gulf
+msgid "Order confirmed (Gulf)"
+msgstr "تأكيد الطلب (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_sale_confirmed_msa
+msgid "Order confirmed (formal)"
+msgstr "تأكيد الطلب (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_overdue_en
+msgid "Payment reminder (English)"
+msgstr "تذكير بالسداد (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_overdue_gulf
+msgid "Payment reminder (Gulf)"
+msgstr "تذكير بالسداد (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_overdue_msa
+msgid "Payment reminder (formal)"
+msgstr "تذكير بالسداد (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__invoice_overdue
+msgid "Payment reminder (overdue)"
+msgstr "تذكير بالسداد (متأخرة)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__phone_field
+msgid "Phone Field on Document"
+msgstr "حقل الهاتف في المستند"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__phone_valid
+msgid "Phone Valid"
+msgstr "الرقم صحيح"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_wa_gulf_template__body
+msgid ""
+"Placeholders: {partner} {company} {doc} {amount} {residual} {due_date} {date} {link} {user}\n"
+"Arabic aliases: {العميل} {الشركة} {المستند} {المبلغ} {المتبقي} {الاستحقاق} {التاريخ} {الرابط} {الموظف}\n"
+"WhatsApp formatting works too: *bold* _italic_ ~strike~"
+msgstr ""
+"المتغيرات: {partner} {company} {doc} {amount} {residual} {due_date} {date} {link} {user}\n"
+"بالعربية: {العميل} {الشركة} {المستند} {المبلغ} {المتبقي} {الاستحقاق} {التاريخ} {الرابط} {الموظف}\n"
+"ويدعم تنسيق واتساب: *عريض* _مائل_ ~مشطوب~"
+
+#. module: whatsapp_gulf_click
+#. odoo-python
+#: code:addons/whatsapp_gulf_click/wizard/wa_gulf_composer.py:0
+msgid "Please enter the recipient's mobile number."
+msgstr "يرجى إدخال رقم جوال المستلم."
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_pos_order
+msgid "Point of Sale Orders"
+msgstr "طلبات نقاط البيع"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__preview
+msgid "Preview"
+msgstr "معاينة"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_project_task
+msgid "Project Tasks"
+msgstr "مهام المشاريع"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_purchase_order
+msgid "Purchase Orders"
+msgstr "أوامر الشراء"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__purchase
+msgid "Purchase order to vendor"
+msgstr "أمر شراء للمورد"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_purchase_en
+msgid "Purchase order to vendor (English)"
+msgstr "أمر شراء للمورد (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_purchase_gulf
+msgid "Purchase order to vendor (Gulf)"
+msgstr "أمر شراء للمورد (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_purchase_msa
+msgid "Purchase order to vendor (formal)"
+msgstr "أمر شراء للمورد (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__quotation
+msgid "Quotation ready"
+msgstr "عرض السعر جاهز"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_quotation_en
+msgid "Quotation ready (English)"
+msgstr "عرض السعر جاهز (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_quotation_gulf
+msgid "Quotation ready (Gulf)"
+msgstr "عرض السعر جاهز (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_quotation_msa
+msgid "Quotation ready (formal)"
+msgstr "عرض السعر جاهز (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_sale_order
+msgid "Quotations & Sales Orders"
+msgstr "عروض الأسعار وأوامر البيع"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__partner_id
+msgid "Recipient"
+msgstr "المستلم"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.document,name:whatsapp_gulf_click.doc_repair_order
+msgid "Repair Orders"
+msgstr "أوامر الإصلاح"
+
+#. module: whatsapp_gulf_click
+#. odoo-python
+#: code:addons/whatsapp_gulf_click/models/base.py:0
+#: model:ir.actions.act_window,name:whatsapp_gulf_click.action_wa_gulf_composer
+#: model:ir.model,name:whatsapp_gulf_click.model_wa_gulf_composer
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid "Send by WhatsApp"
+msgstr "إرسال عبر واتساب"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__sequence
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: whatsapp_gulf_click
+#: model:ir.actions.act_window,name:whatsapp_gulf_click.action_wa_gulf_settings
+#: model:ir.ui.menu,name:whatsapp_gulf_click.menu_wa_gulf_settings
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_template__key
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_search
+msgid "Situation"
+msgstr "الحالة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_document__model_name
+msgid "Technical Model"
+msgstr "النموذج التقني"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_wa_gulf_template__model_name
+msgid ""
+"Technical model this template is meant for (account.move, sale.order...). "
+"Leave empty to offer it on every document."
+msgstr ""
+"النموذج التقني المخصص له القالب (account.move، sale.order...). اتركه فارغًا "
+"ليظهر في كل المستندات."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_wa_gulf_document__model_name
+msgid ""
+"Technical name of the model, e.g. account.move, sale.order, crm.lead or any "
+"custom model."
+msgstr ""
+"الاسم التقني للنموذج، مثل account.move أو sale.order أو crm.lead أو أي نموذج"
+" مخصص."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__template_id
+msgid "Template"
+msgstr "القالب"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "Templates & documents"
+msgstr "القوالب والمستندات"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__received
+msgid "Thank you after receipt"
+msgstr "شكر بعد الاستلام"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_template__key__invoice_paid
+msgid "Thank you for your payment"
+msgstr "شكر على السداد"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_paid_en
+msgid "Thank you for your payment (English)"
+msgstr "شكر على السداد (إنجليزي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_paid_gulf
+msgid "Thank you for your payment (Gulf)"
+msgstr "شكر على السداد (خليجي)"
+
+#. module: whatsapp_gulf_click
+#: model:wa.gulf.template,name:whatsapp_gulf_click.tpl_invoice_paid_msa
+msgid "Thank you for your payment (formal)"
+msgstr "شكر على السداد (فصحى)"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_wa_gulf_document__is_installed
+msgid "The application providing this document is installed."
+msgstr "التطبيق الذي يوفّر هذا المستند مثبّت."
+
+#. module: whatsapp_gulf_click
+#. odoo-python
+#: code:addons/whatsapp_gulf_click/wizard/wa_gulf_composer.py:0
+msgid "The message is empty."
+msgstr "الرسالة فارغة."
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_composer_view_form
+msgid "Type your message..."
+msgstr "اكتب رسالتك..."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_wa_gulf_template__key
+msgid ""
+"Used to pick the right template automatically (e.g. an overdue invoice gets "
+"the payment reminder)."
+msgstr ""
+"تُستخدم لاختيار القالب المناسب تلقائيًا (مثلًا: الفاتورة المتأخرة تحصل على "
+"تذكير السداد)."
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,help:whatsapp_gulf_click.field_wa_gulf_composer__country_code
+msgid "Used when the number is typed without its country code."
+msgstr "تُستخدم عند كتابة الرقم بدون مفتاح الدولة."
+
+#. module: whatsapp_gulf_click
+#. odoo-python
+#: code:addons/whatsapp_gulf_click/models/base.py:0
+msgid "WhatsApp"
+msgstr "واتساب"
+
+#. module: whatsapp_gulf_click
+#: model:ir.ui.menu,name:whatsapp_gulf_click.menu_wa_gulf_root
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.res_config_settings_view_form_wa_gulf
+msgid "WhatsApp Button"
+msgstr "زر واتساب"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model,name:whatsapp_gulf_click.model_wa_gulf_document
+msgid "WhatsApp Button - Enabled Document"
+msgstr "زر واتساب — مستند مفعّل"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model,name:whatsapp_gulf_click.model_wa_gulf_template
+msgid "WhatsApp Message Template"
+msgstr "قالب رسالة واتساب"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__wa_number
+msgid "WhatsApp Number"
+msgstr "رقم واتساب"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_form
+msgid "WhatsApp Template"
+msgstr "قالب واتساب"
+
+#. module: whatsapp_gulf_click
+#: model:ir.actions.act_window,name:whatsapp_gulf_click.action_wa_gulf_template
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_list
+msgid "WhatsApp Templates"
+msgstr "قوالب واتساب"
+
+#. module: whatsapp_gulf_click
+#. odoo-python
+#: code:addons/whatsapp_gulf_click/wizard/wa_gulf_composer.py:0
+msgid "WhatsApp message sent to"
+msgstr "تم إرسال رسالة واتساب إلى"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields,field_description:whatsapp_gulf_click.field_wa_gulf_composer__phone_display
+msgid "Will be sent to"
+msgstr "سيُرسل إلى"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_form
+msgid "account.move"
+msgstr "account.move"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_open_mode__api
+msgid "api.whatsapp.com (compatibility)"
+msgstr "api.whatsapp.com (للتوافق)"
+
+#. module: whatsapp_gulf_click
+#: model_terms:ir.ui.view,arch_db:whatsapp_gulf_click.wa_gulf_template_view_form
+msgid "e.g. Invoice ready"
+msgstr "مثال: الفاتورة جاهزة"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__ae
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__ae
+msgid "🇦🇪 United Arab Emirates"
+msgstr "🇦🇪 الإمارات"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__bh
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__bh
+msgid "🇧🇭 Bahrain"
+msgstr "🇧🇭 البحرين"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__dz
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__dz
+msgid "🇩🇿 Algeria"
+msgstr "🇩🇿 الجزائر"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__eg
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__eg
+msgid "🇪🇬 Egypt"
+msgstr "🇪🇬 مصر"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__iq
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__iq
+msgid "🇮🇶 Iraq"
+msgstr "🇮🇶 العراق"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__jo
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__jo
+msgid "🇯🇴 Jordan"
+msgstr "🇯🇴 الأردن"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__kw
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__kw
+msgid "🇰🇼 Kuwait"
+msgstr "🇰🇼 الكويت"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__lb
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__lb
+msgid "🇱🇧 Lebanon"
+msgstr "🇱🇧 لبنان"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__ly
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__ly
+msgid "🇱🇾 Libya"
+msgstr "🇱🇾 ليبيا"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__ma
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__ma
+msgid "🇲🇦 Morocco"
+msgstr "🇲🇦 المغرب"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__om
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__om
+msgid "🇴🇲 Oman"
+msgstr "🇴🇲 عُمان"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__ps
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__ps
+msgid "🇵🇸 Palestine"
+msgstr "🇵🇸 فلسطين"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__qa
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__qa
+msgid "🇶🇦 Qatar"
+msgstr "🇶🇦 قطر"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__sa
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__sa
+msgid "🇸🇦 Saudi Arabia"
+msgstr "🇸🇦 السعودية"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__sd
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__sd
+msgid "🇸🇩 Sudan"
+msgstr "🇸🇩 السودان"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__sy
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__sy
+msgid "🇸🇾 Syria"
+msgstr "🇸🇾 سوريا"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__tn
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__tn
+msgid "🇹🇳 Tunisia"
+msgstr "🇹🇳 تونس"
+
+#. module: whatsapp_gulf_click
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__res_config_settings__wa_gulf_default_country__ye
+#: model:ir.model.fields.selection,name:whatsapp_gulf_click.selection__wa_gulf_composer__country_code__ye
+msgid "🇾🇪 Yemen"
+msgstr "🇾🇪 اليمن"
