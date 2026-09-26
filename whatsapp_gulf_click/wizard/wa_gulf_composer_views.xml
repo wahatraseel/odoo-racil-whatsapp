@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wa_gulf_composer_view_form" model="ir.ui.view">
+        <field name="name">wa.gulf.composer.form</field>
+        <field name="model">wa.gulf.composer</field>
+        <field name="arch" type="xml">
+            <form string="Send by WhatsApp" class="o_wa_gulf_composer">
+                <field name="res_model" invisible="1"/>
+                <field name="res_id" invisible="1"/>
+                <field name="has_link" invisible="1"/>
+                <field name="phone_valid" invisible="1"/>
+                <field name="wa_number" invisible="1"/>
+                <div class="alert alert-warning mb-2" role="alert" invisible="phone_valid or not phone">
+                    <i class="fa fa-exclamation-triangle me-1"/>
+                    <span>This does not look like a valid mobile number for the selected country. Please check it before sending.</span>
+                </div>
+                <div class="alert alert-info mb-2" role="alert" invisible="phone">
+                    <i class="fa fa-info-circle me-1"/>
+                    <span>No mobile number was found for this contact. Type it below (local format is fine, e.g. 05XXXXXXXX).</span>
+                </div>
+                <group>
+                    <group>
+                        <field name="record_name" string="Document" invisible="not record_name"/>
+                        <field name="partner_id" options="{'no_create': True}"/>
+                        <field name="phone" placeholder="05XXXXXXXX" class="o_wa_gulf_ltr"/>
+                        <field name="country_code"/>
+                        <field name="phone_display" class="fw-bold o_wa_gulf_ltr" invisible="not phone"/>
+                    </group>
+                    <group>
+                        <field name="style" widget="radio"/>
+                        <field name="template_id" options="{'no_create': True, 'no_open': True}"/>
+                        <field name="link_type" widget="radio" invisible="not has_link"/>
+                        <field name="log_note"/>
+                    </group>
+                </group>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="body" class="fw-bold"/>
+                        <field name="body" nolabel="1" class="o_wa_gulf_body" placeholder="Type your message..."/>
+                        <div class="text-muted small">Formatting: *bold* _italic_ ~strike~</div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="preview" class="fw-bold"/>
+                        <field name="preview" nolabel="1" readonly="1"/>
+                    </div>
+                </div>
+                <footer>
+                    <button name="action_send" type="object" string="Open WhatsApp" icon="fa-whatsapp"
+                            class="btn-primary o_wa_gulf_send" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_wa_gulf_composer" model="ir.actions.act_window">
+        <field name="name">Send by WhatsApp</field>
+        <field name="res_model">wa.gulf.composer</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

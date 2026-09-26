@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="tpl_any_msa" model="wa.gulf.template">
+        <field name="name">General greeting (formal)</field>
+        <field name="key">any</field>
+        <field name="style">msa</field>
+        <field name="sequence">90</field>
+        <field name="body">السلام عليكم ورحمة الله {العميل}،
+نتواصل معكم من {الشركة} بخصوص {المستند}.
+{الرابط}
+
+مع خالص التحية،
+{الموظف}</field>
+    </record>
+    <record id="tpl_any_gulf" model="wa.gulf.template">
+        <field name="name">General greeting (Gulf)</field>
+        <field name="key">any</field>
+        <field name="style">gulf</field>
+        <field name="sequence">91</field>
+        <field name="body">هلا والله {العميل} 👋
+معك {الموظف} من {الشركة}، بخصوص {المستند}.
+{الرابط}
+
+بخدمتك دايمًا 🌷</field>
+    </record>
+    <record id="tpl_any_en" model="wa.gulf.template">
+        <field name="name">General greeting (English)</field>
+        <field name="key">any</field>
+        <field name="style">en</field>
+        <field name="sequence">92</field>
+        <field name="body">Hello {partner},
+This is {user} from {company} regarding {doc}.
+{link}
+
+Best regards,
+{company}</field>
+    </record>
+    <record id="tpl_contact_msa" model="wa.gulf.template">
+        <field name="name">Contact greeting (formal)</field>
+        <field name="key">contact</field>
+        <field name="style">msa</field>
+        <field name="sequence">93</field>
+        <field name="body">السلام عليكم ورحمة الله {العميل}،
+معكم {الموظف} من {الشركة}.</field>
+    </record>
+    <record id="tpl_contact_gulf" model="wa.gulf.template">
+        <field name="name">Contact greeting (Gulf)</field>
+        <field name="key">contact</field>
+        <field name="style">gulf</field>
+        <field name="sequence">94</field>
+        <field name="body">هلا والله {العميل} 👋
+معك {الموظف} من {الشركة}.</field>
+    </record>
+    <record id="tpl_contact_en" model="wa.gulf.template">
+        <field name="name">Contact greeting (English)</field>
+        <field name="key">contact</field>
+        <field name="style">en</field>
+        <field name="sequence">95</field>
+        <field name="body">Hello {partner},
+This is {user} from {company}.</field>
+    </record>
+    <record id="tpl_invoice_open_msa" model="wa.gulf.template">
+        <field name="name">Invoice ready (formal)</field>
+        <field name="key">invoice_open</field>
+        <field name="style">msa</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">10</field>
+        <field name="body">السلام عليكم {العميل}،
+نفيدكم بأن فاتورتكم رقم *{المستند}* بمبلغ *{المبلغ}* جاهزة، وتاريخ استحقاقها {الاستحقاق}.
+للاطلاع على الفاتورة وتحميلها:
+{الرابط}
+
+شاكرين لكم ثقتكم،
+{الشركة}</field>
+    </record>
+    <record id="tpl_invoice_open_gulf" model="wa.gulf.template">
+        <field name="name">Invoice ready (Gulf)</field>
+        <field name="key">invoice_open</field>
+        <field name="style">gulf</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">11</field>
+        <field name="body">هلا {العميل} 👋
+فاتورتك رقم *{المستند}* جاهزة بمبلغ *{المبلغ}*، وآخر موعد للسداد {الاستحقاق}.
+تقدر تشوفها وتحمّلها من هنا:
+{الرابط}
+
+نشكرك على ثقتك 🌷
+{الشركة}</field>
+    </record>
+    <record id="tpl_invoice_open_en" model="wa.gulf.template">
+        <field name="name">Invoice ready (English)</field>
+        <field name="key">invoice_open</field>
+        <field name="style">en</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">12</field>
+        <field name="body">Hello {partner},
+Your invoice *{doc}* for *{amount}* is ready, due on {due_date}.
+View and download it here:
+{link}
+
+Thank you for your business,
+{company}</field>
+    </record>
+    <record id="tpl_invoice_overdue_msa" model="wa.gulf.template">
+        <field name="name">Payment reminder (formal)</field>
+        <field name="key">invoice_overdue</field>
+        <field name="style">msa</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">20</field>
+        <field name="body">السلام عليكم {العميل}،
+نود تذكيركم بأن الفاتورة رقم *{المستند}* قد تجاوزت تاريخ استحقاقها ({الاستحقاق})، والمبلغ المتبقي *{المتبقي}*.
+نأمل التكرم بالسداد في أقرب وقت، ويمكنكم الاطلاع على الفاتورة من الرابط:
+{الرابط}
+
+وإن كنتم قد سددتم فنرجو إهمال هذه الرسالة، مع الشكر.
+{الشركة}</field>
+    </record>
+    <record id="tpl_invoice_overdue_gulf" model="wa.gulf.template">
+        <field name="name">Payment reminder (Gulf)</field>
+        <field name="key">invoice_overdue</field>
+        <field name="style">gulf</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">21</field>
+        <field name="body">هلا {العميل}، عساك بخير 🌷
+حبينا نذكّرك إن فاتورة *{المستند}* فات موعد سدادها ({الاستحقاق})، والمتبقي *{المتبقي}*.
+لو تكرمت تسددها بأقرب فرصة، وهذا رابط الفاتورة:
+{الرابط}
+
+ولو سددت من قبل تجاهل الرسالة، ومشكور مقدمًا 🙏
+{الشركة}</field>
+    </record>
+    <record id="tpl_invoice_overdue_en" model="wa.gulf.template">
+        <field name="name">Payment reminder (English)</field>
+        <field name="key">invoice_overdue</field>
+        <field name="style">en</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">22</field>
+        <field name="body">Hello {partner},
+A friendly reminder that invoice *{doc}* was due on {due_date}. The outstanding balance is *{residual}*.
+You can view the invoice here:
+{link}
+
+If you have already paid, please disregard this message. Thank you!
+{company}</field>
+    </record>
+    <record id="tpl_invoice_paid_msa" model="wa.gulf.template">
+        <field name="name">Thank you for your payment (formal)</field>
+        <field name="key">invoice_paid</field>
+        <field name="style">msa</field>
+        <field name="sequence">30</field>
+        <field name="body">السلام عليكم {العميل}،
+نشكركم على سداد الفاتورة رقم *{المستند}* بمبلغ {المبلغ}، وقد تم استلام المبلغ بنجاح.
+{الرابط}
+
+نسعد دائمًا بخدمتكم،
+{الشركة}</field>
+    </record>
+    <record id="tpl_invoice_paid_gulf" model="wa.gulf.template">
+        <field name="name">Thank you for your payment (Gulf)</field>
+        <field name="key">invoice_paid</field>
+        <field name="style">gulf</field>
+        <field name="sequence">31</field>
+        <field name="body">هلا {العميل} 🌷
+وصلنا سدادك لفاتورة *{المستند}* بمبلغ {المبلغ}، الله يعطيك العافية ومشكور على تعاملك معنا.
+{الرابط}
+
+{الشركة}</field>
+    </record>
+    <record id="tpl_invoice_paid_en" model="wa.gulf.template">
+        <field name="name">Thank you for your payment (English)</field>
+        <field name="key">invoice_paid</field>
+        <field name="style">en</field>
+        <field name="sequence">32</field>
+        <field name="body">Hello {partner},
+We have received your payment for *{doc}* ({amount}). Thank you!
+{link}
+
+We look forward to serving you again,
+{company}</field>
+    </record>
+    <record id="tpl_refund_msa" model="wa.gulf.template">
+        <field name="name">Credit note (formal)</field>
+        <field name="key">refund</field>
+        <field name="style">msa</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">40</field>
+        <field name="body">السلام عليكم {العميل}،
+نفيدكم بإصدار إشعار دائن رقم *{المستند}* بمبلغ *{المبلغ}* لصالحكم.
+للاطلاع عليه:
+{الرابط}
+
+مع التحية،
+{الشركة}</field>
+    </record>
+    <record id="tpl_refund_gulf" model="wa.gulf.template">
+        <field name="name">Credit note (Gulf)</field>
+        <field name="key">refund</field>
+        <field name="style">gulf</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">41</field>
+        <field name="body">هلا {العميل} 👋
+طلعنا لك إشعار دائن رقم *{المستند}* بمبلغ *{المبلغ}* لصالحك.
+تقدر تشوفه من هنا:
+{الرابط}
+
+{الشركة}</field>
+    </record>
+    <record id="tpl_refund_en" model="wa.gulf.template">
+        <field name="name">Credit note (English)</field>
+        <field name="key">refund</field>
+        <field name="style">en</field>
+        <field name="model_name">account.move</field>
+        <field name="sequence">42</field>
+        <field name="body">Hello {partner},
+A credit note *{doc}* for *{amount}* has been issued in your favour.
+View it here:
+{link}
+
+{company}</field>
+    </record>
+    <record id="tpl_quotation_msa" model="wa.gulf.template">
+        <field name="name">Quotation ready (formal)</field>
+        <field name="key">quotation</field>
+        <field name="style">msa</field>
+        <field name="model_name">sale.order</field>
+        <field name="sequence">50</field>
+        <field name="body">السلام عليكم {العميل}،
+يسعدنا تزويدكم بعرض السعر رقم *{المستند}* بإجمالي *{المبلغ}*، وهو ساري حتى {الصلاحية}.
+يمكنكم الاطلاع على العرض واعتماده من الرابط:
+{الرابط}
+
+ونحن في خدمتكم لأي استفسار،
+{الموظف} — {الشركة}</field>
+    </record>
+    <record id="tpl_quotation_gulf" model="wa.gulf.template">
+        <field name="name">Quotation ready (Gulf)</field>
+        <field name="key">quotation</field>
+        <field name="style">gulf</field>
+        <field name="model_name">sale.order</field>
+        <field name="sequence">51</field>
+        <field name="body">هلا {العميل} 👋
+عرض السعر حقك رقم *{المستند}* جاهز، الإجمالي *{المبلغ}* وساري لين {الصلاحية}.
+تقدر تشوفه وتعتمده من هنا:
+{الرابط}
+
+لو عندك أي استفسار أنا حاضر 🌷
+{الموظف} — {الشركة}</field>
+    </record>
+    <record id="tpl_quotation_en" model="wa.gulf.template">
+        <field name="name">Quotation ready (English)</field>
+        <field name="key">quotation</field>
+        <field name="style">en</field>
+        <field name="model_name">sale.order</field>
+        <field name="sequence">52</field>
+        <field name="body">Hello {partner},
+Please find our quotation *{doc}* totalling *{amount}*, valid until {due_date}.
+You can review and accept it online:
+{link}
+
+Happy to answer any questions,
+{user} — {company}</field>
+    </record>
+    <record id="tpl_sale_confirmed_msa" model="wa.gulf.template">
+        <field name="name">Order confirmed (formal)</field>
+        <field name="key">sale_confirmed</field>
+        <field name="style">msa</field>
+        <field name="model_name">sale.order</field>
+        <field name="sequence">60</field>
+        <field name="body">السلام عليكم {العميل}،
+نشكركم على طلبكم، ونفيدكم بتأكيد الطلب رقم *{المستند}* بإجمالي *{المبلغ}*، وسنوافيكم بمستجدات التنفيذ.
+{الرابط}
+
+مع خالص الشكر،
+{الشركة}</field>
+    </record>
+    <record id="tpl_sale_confirmed_gulf" model="wa.gulf.template">
+        <field name="name">Order confirmed (Gulf)</field>
+        <field name="key">sale_confirmed</field>
+        <field name="style">gulf</field>
+        <field name="model_name">sale.order</field>
+        <field name="sequence">61</field>
+        <field name="body">هلا {العميل} 🌷
+تم تأكيد طلبك رقم *{المستند}* بإجمالي *{المبلغ}*، وبنبلغك أول بأول.
+{الرابط}
+
+مشكور على ثقتك،
+{الشركة}</field>
+    </record>
+    <record id="tpl_sale_confirmed_en" model="wa.gulf.template">
+        <field name="name">Order confirmed (English)</field>
+        <field name="key">sale_confirmed</field>
+        <field name="style">en</field>
+        <field name="model_name">sale.order</field>
+        <field name="sequence">62</field>
+        <field name="body">Hello {partner},
+Thank you! Your order *{doc}* ({amount}) is confirmed. We will keep you updated.
+{link}
+
+{company}</field>
+    </record>
+    <record id="tpl_purchase_msa" model="wa.gulf.template">
+        <field name="name">Purchase order to vendor (formal)</field>
+        <field name="key">purchase</field>
+        <field name="style">msa</field>
+        <field name="model_name">purchase.order</field>
+        <field name="sequence">70</field>
+        <field name="body">السلام عليكم {العميل}،
+مرفق لكم أمر الشراء رقم *{المستند}* بإجمالي *{المبلغ}*، ونأمل التوريد في الموعد المحدد {الاستحقاق}.
+{الرابط}
+
+مع التحية،
+{الموظف} — {الشركة}</field>
+    </record>
+    <record id="tpl_purchase_gulf" model="wa.gulf.template">
+        <field name="name">Purchase order to vendor (Gulf)</field>
+        <field name="key">purchase</field>
+        <field name="style">gulf</field>
+        <field name="model_name">purchase.order</field>
+        <field name="sequence">71</field>
+        <field name="body">هلا {العميل} 👋
+هذا أمر الشراء رقم *{المستند}* بإجمالي *{المبلغ}*، ونبي التوريد بموعده {الاستحقاق} إن شاء الله.
+{الرابط}
+
+{الموظف} — {الشركة}</field>
+    </record>
+    <record id="tpl_purchase_en" model="wa.gulf.template">
+        <field name="name">Purchase order to vendor (English)</field>
+        <field name="key">purchase</field>
+        <field name="style">en</field>
+        <field name="model_name">purchase.order</field>
+        <field name="sequence">72</field>
+        <field name="body">Hello {partner},
+Please find our purchase order *{doc}* totalling *{amount}*. Expected delivery: {due_date}.
+{link}
+
+Regards,
+{user} — {company}</field>
+    </record>
+    <record id="tpl_delivery_msa" model="wa.gulf.template">
+        <field name="name">Delivery on the way (formal)</field>
+        <field name="key">delivery</field>
+        <field name="style">msa</field>
+        <field name="model_name">stock.picking</field>
+        <field name="sequence">80</field>
+        <field name="body">السلام عليكم {العميل}،
+نفيدكم بأن شحنتكم رقم *{المستند}* في طريقها إليكم، وموعد التسليم المتوقع {الاستحقاق}.
+
+مع التحية،
+{الشركة}</field>
+    </record>
+    <record id="tpl_delivery_gulf" model="wa.gulf.template">
+        <field name="name">Delivery on the way (Gulf)</field>
+        <field name="key">delivery</field>
+        <field name="style">gulf</field>
+        <field name="model_name">stock.picking</field>
+        <field name="sequence">81</field>
+        <field name="body">هلا {العميل} 🚚
+طلبك رقم *{المستند}* طلع لك، والتسليم المتوقع {الاستحقاق} إن شاء الله.
+
+{الشركة}</field>
+    </record>
+    <record id="tpl_delivery_en" model="wa.gulf.template">
+        <field name="name">Delivery on the way (English)</field>
+        <field name="key">delivery</field>
+        <field name="style">en</field>
+        <field name="model_name">stock.picking</field>
+        <field name="sequence">82</field>
+        <field name="body">Hello {partner},
+Your delivery *{doc}* is on its way. Expected on {due_date}.
+
+{company}</field>
+    </record>
+    <record id="tpl_received_msa" model="wa.gulf.template">
+        <field name="name">Goods received (formal)</field>
+        <field name="key">received</field>
+        <field name="style">msa</field>
+        <field name="model_name">stock.picking</field>
+        <field name="sequence">85</field>
+        <field name="body">السلام عليكم {العميل}،
+نفيدكم باستلام الشحنة رقم *{المستند}*، شاكرين لكم حسن التعاون.
+
+{الشركة}</field>
+    </record>
+    <record id="tpl_received_gulf" model="wa.gulf.template">
+        <field name="name">Goods received (Gulf)</field>
+        <field name="key">received</field>
+        <field name="style">gulf</field>
+        <field name="model_name">stock.picking</field>
+        <field name="sequence">86</field>
+        <field name="body">هلا {العميل} 🌷
+استلمنا الشحنة رقم *{المستند}*، مشكورين على التعاون.
+
+{الشركة}</field>
+    </record>
+    <record id="tpl_received_en" model="wa.gulf.template">
+        <field name="name">Goods received (English)</field>
+        <field name="key">received</field>
+        <field name="style">en</field>
+        <field name="model_name">stock.picking</field>
+        <field name="sequence">87</field>
+        <field name="body">Hello {partner},
+We confirm receipt of shipment *{doc}*. Thank you for your cooperation.
+
+{company}</field>
+    </record>
+</odoo>
