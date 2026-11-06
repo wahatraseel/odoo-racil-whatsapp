@@ -36,6 +36,4 @@ English messages, smart template choice, portal or PDF link, chatter log.
     "images": ["static/description/banner.png"],
     "application": False,
     "installable": True,
-    "price": 0,
-    "currency": "USD",
 }
