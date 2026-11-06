@@ -23,7 +23,7 @@ class TestIntlPhone(BaseCase):
         self.assertWa('+971 50 123 4567', '971501234567')
         self.assertWa('00971501234567', '971501234567')
         self.assertWa('51234567', '96551234567', 'KW')
-        self.assertWa('+965 9123 4567', '96591234567')
+        self.assertWa('+965 9412 3456', '96594123456')
         self.assertWa('33123456', '97433123456', 'QA')
         self.assertWa('36123456', '97336123456', 'BH')
         self.assertWa('92123456', '96892123456', 'OM')
