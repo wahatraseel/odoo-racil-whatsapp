@@ -1,6 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_wa_gulf_template_user,wa.gulf.template user,model_wa_gulf_template,base.group_user,1,0,0,0
-access_wa_gulf_template_admin,wa.gulf.template admin,model_wa_gulf_template,base.group_system,1,1,1,1
-access_wa_gulf_document_user,wa.gulf.document user,model_wa_gulf_document,base.group_user,1,0,0,0
-access_wa_gulf_document_admin,wa.gulf.document admin,model_wa_gulf_document,base.group_system,1,1,1,1
-access_wa_gulf_composer_user,wa.gulf.composer user,model_wa_gulf_composer,base.group_user,1,1,1,1

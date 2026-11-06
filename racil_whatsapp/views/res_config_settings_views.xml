@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_racil_wa" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.racil_whatsapp</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="priority">90</field>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="WhatsApp Button" string="WhatsApp Button" name="racil_whatsapp">
+                    <block title="WhatsApp Button" name="racil_wa_block">
+                        <setting string="Numbers" help="Country assumed for local numbers such as 05XXXXXXXX">
+                            <field name="racil_wa_default_country"/>
+                        </setting>
+                        <setting string="Message language" help="Default style; contacts with an English language get English automatically">
+                            <field name="racil_wa_default_style"/>
+                        </setting>
+                        <setting string="Open with" help="How the chat is opened. No API, no subscription.">
+                            <field name="racil_wa_open_mode"/>
+                        </setting>
+                        <setting string="Document link" help="Link added to invoices, quotations and orders">
+                            <field name="racil_wa_link_type"/>
+                        </setting>
+                        <setting help="Keep a note in the document chatter each time a message is sent">
+                            <field name="racil_wa_log_chatter"/>
+                        </setting>
+                        <setting string="Templates &amp; documents" help="Edit the ready-made messages and choose which documents show the button">
+                            <div class="mt-2">
+                                <button name="%(action_racil_wa_template)d" type="action" string="Message Templates"
+                                        icon="oi-arrow-right" class="btn-link"/>
+                            </div>
+                            <div>
+                                <button name="%(action_racil_wa_document)d" type="action" string="Enabled Documents"
+                                        icon="oi-arrow-right" class="btn-link"/>
+                            </div>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_racil_wa_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'module': 'racil_whatsapp', 'bin_size': False}</field>
+    </record>
+    <menuitem id="menu_racil_wa_settings" name="Settings" parent="menu_racil_wa_root"
+              action="action_racil_wa_settings" sequence="1"/>
+</odoo>
