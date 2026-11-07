@@ -1,10 +1,18 @@
-# زر واتساب رسيل | Racil WhatsApp Button — Odoo 17 / 18 / 19
+# واتساب رسيل | Raseel WhatsApp — Odoo 17 / 18 / 19
 
-وحدة أودو **مجانية للأبد** تضيف زر «واتساب» إلى الفواتير وعروض الأسعار وأوامر البيع والشراء والتسليمات وجهات الاتصال،
+وحدة أودو **مجانية للأبد** من **واحة رسيل** تضيف زر «واتساب» إلى الفواتير وعروض الأسعار وأوامر البيع والشراء والتسليمات وجهات الاتصال،
+مع **إرسال جماعي موجَّه** من أي قائمة، و**تذكيرات السداد** للفواتير المتأخرة، و**قوالب خاصة** لكل موظف، و**تقارير وإحصائيات** للرسائل.
 تعمل مع أرقام كل دول العالم (أكثر من ٢٤٠ دولة ومنطقة). **بدون WhatsApp Business API، بدون حساب Meta، بدون اشتراك شهري.**
 
-A **free-forever** Odoo module that adds a WhatsApp button to invoices, quotations, sales/purchase orders, deliveries and contacts —
+A **free-forever** Odoo module by **Wahat Raseel** that adds a WhatsApp button to invoices, quotations, sales/purchase orders, deliveries and contacts,
+plus **guided bulk sending** from any list view, **overdue payment reminders**, **personal templates** and **sent-message statistics** —
 for customers in any country (240+ countries and territories). **No WhatsApp Business API, no Meta account, no monthly fee.**
+
+## الجديد | What's new
+- **إرسال جماعي موجَّه**: حدّد السجلات في أي قائمة ← الإجراءات ← «إرسال عبر واتساب». تُجهَّز الرسائل مسبقًا وتُفتح المحادثات واحدة تلو الأخرى بزر «فتح واتساب والتالي» (عدّاد، تقدّم، تعديل، تخطٍّ). بلا إرسال آلي، فيبقى الرقم في أمان.
+- **تذكيرات السداد**: قائمة بالفواتير المتأخرة التي لم يُرسل لها تذكير مؤخرًا، مع إعداد أيام التأخير وفترة إعادة التذكير، ومهمة يومية اختيارية لمندوب المبيعات.
+- **قوالب خاصة**: كل مستخدم ينشئ قوالبه (من «قوالبي» أو بخيار «حفظ كقالب خاص» أثناء الإرسال)، لا يراها غيره، وتُختار أولًا عندما تناسب المستند.
+- **تقارير وإحصائيات**: سجل لكل رسالة (المرسل، المستلم، المستند، اللغة، المصدر) مع رسم بياني وجدول محوري وقائمة.
 
 ## المزايا | Features
 - **تنسيق الأرقام تلقائيًا لكل الدول**: `05XXXXXXXX`، `+966 05…`، `00971…`، الأرقام الهندية `٠٥٥…`، المسافات والشرطات والأقواس. يدعم أكثر من ٢٤٠ دولة ومنطقة (بيانات libphonenumber مدمجة)، دون أي مكتبة خارجية.
@@ -24,9 +32,9 @@ for customers in any country (240+ countries and territories). **No WhatsApp Bus
 | `19.0` | Odoo 19 ← هذا الفرع |
 
 ## التثبيت | Installation
-1. انسخ مجلد `racil_whatsapp` من فرع إصدارك إلى مسار الإضافات (على Odoo.sh: أضف المستودع كـ submodule أو ادفع المجلد إلى مستودعك).
-2. حدّث قائمة التطبيقات وثبّت **Racil WhatsApp Button**.
-3. الإعدادات ← زر واتساب: الدولة الافتراضية، لغة الرسائل، نوع الرابط، المستندات المفعّلة.
+1. انسخ مجلد `raseel_whatsapp` من فرع إصدارك إلى مسار الإضافات (على Odoo.sh: أضف المستودع كـ submodule أو ادفع المجلد إلى مستودعك).
+2. حدّث قائمة التطبيقات وثبّت **Raseel WhatsApp**.
+3. الإعدادات ← واتساب رسيل: الدولة الافتراضية، لغة الرسائل، نوع الرابط، أيام التأخير وإعادة التذكير، المستندات المفعّلة.
 
 ## المتغيرات | Placeholders
 `{partner} {company} {doc} {amount} {residual} {due_date} {date} {link} {user}`
@@ -34,11 +42,11 @@ for customers in any country (240+ countries and territories). **No WhatsApp Bus
 
 ## الاختبارات | Tests
 ```
-odoo-bin -d test -i racil_whatsapp,sale_management,purchase,stock,crm --test-tags=racil_wa --stop-after-init
+odoo-bin -d test -i raseel_whatsapp,sale_management,purchase,stock,crm --test-tags=raseel_wa --stop-after-init
 ```
-تمر كل الاختبارات (١٦ اختبارًا) على أودو 17 و18 و19.
+تمر كل الاختبارات (٢١ اختبارًا) على أودو 17 و18 و19.
 
 ---
 WhatsApp is a trademark of WhatsApp LLC. This module is not affiliated with or endorsed by WhatsApp or Meta; it only opens the public click-to-chat link (`wa.me`).
 
-Publisher: Racil Oasis Trading Co. (واحة رسيل) — https://wahatraseel.com — info@wahatraseel.com — License: LGPL-3
+Publisher: Wahat Raseel Trading Company (واحة رسيل) — https://wahatraseel.com — info@wahatraseel.com — License: LGPL-3

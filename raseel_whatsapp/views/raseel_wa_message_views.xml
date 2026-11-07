@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="raseel_wa_message_view_list" model="ir.ui.view">
+        <field name="name">raseel.wa.message.list</field>
+        <field name="model">raseel.wa.message</field>
+        <field name="arch" type="xml">
+            <list string="Sent WhatsApp Messages" create="0" edit="0">
+                <field name="date"/>
+                <field name="user_id" widget="many2one_avatar_user"/>
+                <field name="partner_id"/>
+                <field name="phone" class="o_raseel_wa_ltr"/>
+                <field name="document_id" optional="show"/>
+                <field name="record_name"/>
+                <field name="message_key" optional="show"/>
+                <field name="style" optional="hide"/>
+                <field name="source" widget="badge" optional="show"/>
+                <field name="template_id" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                <field name="message_count" sum="Total" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="raseel_wa_message_view_form" model="ir.ui.view">
+        <field name="name">raseel.wa.message.form</field>
+        <field name="model">raseel.wa.message</field>
+        <field name="arch" type="xml">
+            <form string="Sent WhatsApp Message" create="0" edit="0">
+                <header>
+                    <button name="action_open_document" type="object" string="Open Document"
+                            class="btn-secondary" invisible="not res_id"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="record_name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="phone" class="o_raseel_wa_ltr"/>
+                            <field name="document_id"/>
+                            <field name="res_model" invisible="1"/>
+                            <field name="res_id" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="user_id"/>
+                            <field name="source"/>
+                            <field name="message_key"/>
+                            <field name="style"/>
+                            <field name="template_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <field name="body" class="o_raseel_wa_body" dir="auto"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="raseel_wa_message_view_pivot" model="ir.ui.view">
+        <field name="name">raseel.wa.message.pivot</field>
+        <field name="model">raseel.wa.message</field>
+        <field name="arch" type="xml">
+            <pivot string="WhatsApp Statistics" sample="1">
+                <field name="user_id" type="row"/>
+                <field name="document_id" type="col"/>
+                <field name="message_count" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="raseel_wa_message_view_graph" model="ir.ui.view">
+        <field name="name">raseel.wa.message.graph</field>
+        <field name="model">raseel.wa.message</field>
+        <field name="arch" type="xml">
+            <graph string="WhatsApp Statistics" type="bar" sample="1">
+                <field name="date" interval="day"/>
+                <field name="source"/>
+                <field name="message_count" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="raseel_wa_message_view_search" model="ir.ui.view">
+        <field name="name">raseel.wa.message.search</field>
+        <field name="model">raseel.wa.message</field>
+        <field name="arch" type="xml">
+            <search string="Sent WhatsApp Messages">
+                <field name="partner_id"/>
+                <field name="record_name"/>
+                <field name="user_id"/>
+                <field name="phone"/>
+                <field name="body"/>
+                <filter name="f_mine" string="My Messages" domain="[('user_id', '=', uid)]"/>
+                <separator/>
+                <filter name="f_single" string="Single" domain="[('source', '=', 'single')]"/>
+                <filter name="f_bulk" string="Bulk" domain="[('source', '=', 'bulk')]"/>
+                <filter name="f_reminder" string="Payment Reminders" domain="[('source', '=', 'reminder')]"/>
+                <separator/>
+                <filter name="f_date" string="Date" date="date"/>
+                <separator/>
+                <filter name="g_user" string="Sent By" context="{'group_by': 'user_id'}"/>
+                <filter name="g_partner" string="Recipient" context="{'group_by': 'partner_id'}"/>
+                <filter name="g_type" string="Document Type" context="{'group_by': 'document_id'}"/>
+                <filter name="g_key" string="Situation" context="{'group_by': 'message_key'}"/>
+                <filter name="g_source" string="Sent From" context="{'group_by': 'source'}"/>
+                <filter name="g_style" string="Language" context="{'group_by': 'style'}"/>
+                <filter name="g_date" string="Day" context="{'group_by': 'date:day'}"/>
+                <filter name="g_month" string="Month" context="{'group_by': 'date:month'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_raseel_wa_message" model="ir.actions.act_window">
+        <field name="name">WhatsApp Statistics</field>
+        <field name="res_model">raseel.wa.message</field>
+        <field name="view_mode">graph,pivot,list,form</field>
+        <field name="context">{'search_default_f_date': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No WhatsApp message sent yet</p>
+            <p>Every message opened from the WhatsApp button, the bulk sending or the payment reminders
+               is counted here: per salesperson, customer, document type and day.</p>
+        </field>
+    </record>
+
+    <record id="action_raseel_wa_message_list" model="ir.actions.act_window">
+        <field name="name">Sent Messages</field>
+        <field name="res_model">raseel.wa.message</field>
+        <field name="view_mode">list,form,pivot,graph</field>
+    </record>
+</odoo>
