@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Templates: everybody reads the shared ones and their own; users manage only their personal ones -->
+    <record id="rule_template_user_read" model="ir.rule">
+        <field name="name">WhatsApp templates: shared or own</field>
+        <field name="model_id" ref="model_raseel_wa_template"/>
+        <field name="domain_force">['|', ('user_id', '=', False), ('user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+    <record id="rule_template_user_write" model="ir.rule">
+        <field name="name">WhatsApp templates: users manage their personal templates</field>
+        <field name="model_id" ref="model_raseel_wa_template"/>
+        <field name="domain_force">[('user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        <field name="perm_read" eval="False"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+    <record id="rule_template_admin" model="ir.rule">
+        <field name="name">WhatsApp templates: administrators manage all</field>
+        <field name="model_id" ref="model_raseel_wa_template"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('base.group_system'))]"/>
+    </record>
+
+    <!-- Sent messages: multi-company -->
+    <record id="rule_message_company" model="ir.rule">
+        <field name="name">WhatsApp sent messages: allowed companies</field>
+        <field name="model_id" ref="model_raseel_wa_message"/>
+        <field name="domain_force">['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

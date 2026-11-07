@@ -1,0 +1,44 @@
+.o_raseel_wa_btn .fa-whatsapp,
+.o_raseel_wa_stat .fa-whatsapp,
+.o_raseel_wa_send .fa-whatsapp {
+    color: #25D366;
+}
+.o_raseel_wa_send .fa-whatsapp { color: inherit; }
+.o_raseel_wa_composer {
+    .o_raseel_wa_body textarea, textarea.o_raseel_wa_body { min-height: 220px; unicode-bidi: plaintext; }
+}
+.o_raseel_wa_body textarea { min-height: 220px; unicode-bidi: plaintext; }
+.o_raseel_wa_chat {
+    background: #EFE7DD;
+    background-image: radial-gradient(rgba(0, 0, 0, .04) 1px, transparent 1px);
+    background-size: 14px 14px;
+    border-radius: 8px;
+    padding: 14px;
+    min-height: 220px;
+}
+.o_raseel_wa_bubble {
+    position: relative;
+    background: #D9FDD3;
+    color: #111B21;
+    border-radius: 8px 0 8px 8px;
+    padding: 8px 10px 18px 10px;
+    max-width: 92%;
+    margin-inline-start: auto;
+    box-shadow: 0 1px .5px rgba(11, 20, 26, .13);
+    font-size: 14px;
+    line-height: 1.45;
+    white-space: normal;
+    word-break: break-word;
+    unicode-bidi: plaintext;
+    text-align: start;
+}
+.o_raseel_wa_link { color: #027EB5; text-decoration: underline; }
+.o_raseel_wa_meta {
+    position: absolute;
+    bottom: 3px;
+    inset-inline-end: 8px;
+    font-size: 11px;
+    color: #53BDEB;
+}
+.o_raseel_wa_ltr, .o_raseel_wa_ltr input { direction: ltr; unicode-bidi: plaintext; }
+.o_rtl .o_raseel_wa_ltr, .o_rtl .o_raseel_wa_ltr input { text-align: right; }
