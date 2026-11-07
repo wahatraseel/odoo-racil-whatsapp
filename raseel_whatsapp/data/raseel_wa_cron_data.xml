@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_cron_raseel_wa_daily" model="ir.cron">
+        <field name="name">Raseel WhatsApp: payment reminders and list actions</field>
+        <field name="model_id" ref="model_raseel_wa_bulk"/>
+        <field name="state">code</field>
+        <field name="code">env['raseel.wa.document']._raseel_wa_sync_all_bulk_actions()
+model._cron_overdue_activities()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <function model="raseel.wa.document" name="_raseel_wa_sync_all_bulk_actions"/>
+</odoo>

@@ -1,0 +1,2923 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* raseel_whatsapp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-07 16:23+0000\n"
+"PO-Revision-Date: 2026-11-07 16:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_document__bulk_action_id
+msgid ""
+"\"Send by WhatsApp\" entry of the Actions menu in the list view of this "
+"document."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid "05XXXXXXXX"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_form
+msgid ""
+"<b>Placeholders</b><br/>\n"
+"                        {partner} {company} {doc} {amount} {residual} {due_date} {date} {link} {user}<br/>\n"
+"                        {العميل} {الشركة} {المستند} {المبلغ} {المتبقي} {الاستحقاق} {التاريخ} {الرابط} {الموظف}<br/>\n"
+"                        <b>WhatsApp formatting</b>: *bold* _italic_ ~strike~"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid ""
+"<i class=\"fa fa-check-circle me-1\"/>\n"
+"                        <span>All messages have been processed. You can close this window.</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid ""
+"<i class=\"fa fa-exclamation-triangle me-1\"/>\n"
+"                            <span>No valid mobile number for this contact: type it below, or skip it.</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid ""
+"<i class=\"fa fa-exclamation-triangle me-1\"/>\n"
+"                    <span>This does not look like a valid mobile number for the selected country. Please check it before sending.</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid ""
+"<i class=\"fa fa-info-circle me-1\"/>\n"
+"                    <span>No mobile number was found for this contact. Type it below (local format is fine, e.g. 05XXXXXXXX).</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid ""
+"<i class=\"fa fa-whatsapp me-1\"/>\n"
+"                        <span>Every message is prepared in advance; you then open the chats one after the other\n"
+"                            with a single button. No API and no automated spam, so your number stays safe.</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "<span>remaining</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "<span>sent</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "<span>skipped</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "<span>without a valid number</span>"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__active
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__active
+msgid "Active"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.actions.act_window,help:raseel_whatsapp.action_raseel_wa_document
+msgid "Add a document type"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_template
+msgid "All Templates"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "All messages"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_open_mode__web
+msgid "Always WhatsApp Web"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_res_config_settings__raseel_wa_remind_interval
+msgid ""
+"An invoice already reminded on WhatsApp is hidden from Payment Reminders for"
+" this many days. 0 = always show it."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_res_config_settings__raseel_wa_overdue_days
+msgid ""
+"An invoice appears in Payment Reminders this many days after its due date."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.actions.act_window,help:raseel_whatsapp.action_raseel_wa_document
+msgid ""
+"Any model with a customer field can get the WhatsApp button, including "
+"custom models."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__style__gulf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__style__gulf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__style__gulf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__style__gulf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_style__gulf
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_search
+msgid "Arabic (Gulf dialect)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__style__msa
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__style__msa
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__style__msa
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__style__msa
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_style__msa
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_search
+msgid "Arabic (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_form
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_search
+msgid "Archived"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "Automatic (best template for each document)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__style__auto
+msgid "Automatic (contact's language)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_open_mode__wa_me
+msgid "Automatic (wa.me) - app on phones, choice on computers"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__is_installed
+msgid "Available"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "Back to Skipped"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model,name:raseel_whatsapp.model_base
+msgid "Base"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__bulk_id
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Bulk"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__bulk_action_id
+msgid "Bulk Sending Action"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__source__bulk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__source__bulk
+msgid "Bulk sending"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_crm_lead
+msgid "CRM Leads & Opportunities"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid "Cancel"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "Change Settings"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "Close"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__company_id
+msgid "Company"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__composer_id
+msgid "Composer"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model,name:raseel_whatsapp.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_root
+msgid "Configuration"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__contact
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__contact
+msgid "Contact / lead greeting"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_contact_en
+msgid "Contact greeting (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_contact_gulf
+msgid "Contact greeting (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_contact_msa
+msgid "Contact greeting (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_res_partner
+msgid "Contacts"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__country_code
+msgid "Country"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Country assumed for local numbers such as 05XXXXXXXX"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_res_config_settings__raseel_wa_default_country
+msgid ""
+"Country assumed for numbers typed without a country code when the contact "
+"has no country."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__create_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__create_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__create_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__create_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__create_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__create_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__create_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__create_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__create_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__create_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__refund
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__refund
+msgid "Credit note"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_refund_en
+msgid "Credit note (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_refund_gulf
+msgid "Credit note (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_refund_msa
+msgid "Credit note (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__current_line_id
+msgid "Current"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__partner_field
+msgid "Customer Field"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__link_type__portal
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__link_type__portal
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_link_type__portal
+msgid "Customer portal page"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__raseel_wa_reminder_activity
+msgid "Daily To-Do for Overdue Invoices"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Date"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Day"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__raseel_wa_default_country
+msgid "Default Country (WhatsApp)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__raseel_wa_default_style
+msgid "Default Message Language"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid ""
+"Default style; contacts with an English language get English automatically"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_stock_picking
+msgid "Deliveries & Receipts"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__delivery
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__delivery
+msgid "Delivery / shipment"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_delivery_en
+msgid "Delivery on the way (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_delivery_gulf
+msgid "Delivery on the way (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_delivery_msa
+msgid "Delivery on the way (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__link_type__pdf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__link_type__pdf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_link_type__pdf
+msgid "Direct PDF download"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__display_name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__display_name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__display_name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__display_name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__display_name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__display_name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/models/raseel_wa_message.py:0
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__current_record
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__record_name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__record_name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__name
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__record_name
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid "Document"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__res_id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__res_id
+msgid "Document ID"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__raseel_wa_link_type
+msgid "Document Link"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__res_model
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__res_model
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__res_model
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__model_name
+msgid "Document Model"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__document_type
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Document Type"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Document link"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__model_label
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "Documents"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.actions.act_window,name:raseel_whatsapp.action_raseel_wa_document
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_document_view_list
+msgid "Documents with WhatsApp Button"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__state__done
+msgid "Done"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid ""
+"Edit the ready-made messages and choose which documents show the button"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_document
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Enabled Documents"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__style__en
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__style__en
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__style__en
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__style__en
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_style__en
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_search
+msgid "English"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.actions.act_window,help:raseel_whatsapp.action_raseel_wa_message
+msgid ""
+"Every message opened from the WhatsApp button, the bulk sending or the payment reminders\n"
+"               is counted here: per salesperson, customer, document type and day."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_res_config_settings__raseel_wa_reminder_activity
+msgid ""
+"Every morning, schedule a To-Do on each overdue invoice for its salesperson "
+"to send the WhatsApp payment reminder."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid "Formatting: *bold* _italic_ ~strike~"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__any
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__any
+msgid "General / any document"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_any_en
+msgid "General greeting (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_any_gulf
+msgid "General greeting (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_any_msa
+msgid "General greeting (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_received_en
+msgid "Goods received (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_received_gulf
+msgid "Goods received (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_received_msa
+msgid "Goods received (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__has_link
+msgid "Has Link"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "How the chat is opened. No API, no subscription."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__invoice_open
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__invoice_open
+msgid "Invoice ready"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_open_en
+msgid "Invoice ready (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_open_gulf
+msgid "Invoice ready (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_open_msa
+msgid "Invoice ready (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_account_move
+msgid "Invoices & Credit Notes"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Keep a note in the document chatter each time a message is sent"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_composer__save_template
+msgid "Keep this wording as a personal template for the next time."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__style
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__style
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__style
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Language"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__style
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_search
+msgid "Language Style"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__write_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__write_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__write_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__write_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__write_uid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__write_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__write_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__write_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__write_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__write_date
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_bulk__template_id
+msgid ""
+"Leave empty to pick the best template for every document automatically (e.g."
+" overdue invoices get the payment reminder)."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__line_count
+msgid "Line Count"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__link_type
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__link_type
+msgid "Link"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Link added to invoices, quotations and orders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__raseel_wa_log_chatter
+msgid "Log Sent Messages in Chatter"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__log_note
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__log_note
+msgid "Log in chatter"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_document__partner_field
+msgid ""
+"Many2one field pointing to the contact (res.partner). Leave empty for the "
+"Contacts model itself."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__current_body
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__body
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__body
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__body
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__body
+msgid "Message"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__message_key
+msgid "Message Key"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Message Templates"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Message language"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__line_ids
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__message_count
+msgid "Messages"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__current_phone
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__phone
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__phone
+msgid "Mobile"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Month"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "My Messages"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.actions.act_window,name:raseel_whatsapp.action_raseel_wa_template_mine
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_template_mine
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_search
+msgid "My Templates"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_composer.py:0
+msgid "My template - %s"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__name
+msgid "Name"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.actions.act_window,help:raseel_whatsapp.action_raseel_wa_message
+msgid "No WhatsApp message sent yet"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+msgid "No overdue invoice needs a reminder today."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__phone_display
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__phone
+msgid "Number"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Numbers"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_form
+msgid "Open Document"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Open Payment Reminders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid "Open WhatsApp"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "Open WhatsApp & Next"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__raseel_wa_open_mode
+msgid "Open WhatsApp With"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Open with"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_document__phone_field
+msgid ""
+"Optional: a phone field stored on the document itself (e.g. 'phone' on CRM "
+"leads). It is tried before the contact's numbers."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__sale_confirmed
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__sale_confirmed
+msgid "Order confirmed"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_sale_confirmed_en
+msgid "Order confirmed (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_sale_confirmed_gulf
+msgid "Order confirmed (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_sale_confirmed_msa
+msgid "Order confirmed (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__raseel_wa_overdue_days
+msgid "Overdue After (days)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Overdue customer invoices listed in WhatsApp > Payment Reminders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+#: model:ir.actions.server,name:raseel_whatsapp.action_raseel_wa_overdue
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_overdue
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Payment Reminders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__source__reminder
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__source__reminder
+msgid "Payment reminder"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_overdue_en
+msgid "Payment reminder (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_overdue_gulf
+msgid "Payment reminder (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_overdue_msa
+msgid "Payment reminder (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__invoice_overdue
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__invoice_overdue
+msgid "Payment reminder (overdue)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Payment reminders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+msgid "Payment reminders need the Invoicing application."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__is_personal
+msgid "Personal"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__user_id
+msgid "Personal Template Of"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.actions.act_window,help:raseel_whatsapp.action_raseel_wa_template_mine
+msgid ""
+"Personal templates are only visible to you and are picked first when they match the document.\n"
+"               You can also tick \"Save as my template\" when sending a message."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__phone_field
+msgid "Phone Field on Document"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__phone_valid
+msgid "Phone Valid"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_template__body
+msgid ""
+"Placeholders: {partner} {company} {doc} {amount} {residual} {due_date} {date} {link} {user}\n"
+"Arabic aliases: {العميل} {الشركة} {المستند} {المبلغ} {المتبقي} {الاستحقاق} {التاريخ} {الرابط} {الموظف}\n"
+"WhatsApp formatting works too: *bold* _italic_ ~strike~"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_composer.py:0
+msgid "Please enter the recipient's mobile number."
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+msgid "Please select at most %s documents at a time."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_pos_order
+msgid "Point of Sale Orders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "Prepare Messages"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__current_preview
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__preview
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__preview
+msgid "Preview"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__progress
+msgid "Progress"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_project_task
+msgid "Project Tasks"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_purchase_order
+msgid "Purchase Orders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__purchase
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__purchase
+msgid "Purchase order to vendor"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_purchase_en
+msgid "Purchase order to vendor (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_purchase_gulf
+msgid "Purchase order to vendor (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_purchase_msa
+msgid "Purchase order to vendor (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__quotation
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__quotation
+msgid "Quotation ready"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_quotation_en
+msgid "Quotation ready (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_quotation_gulf
+msgid "Quotation ready (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_quotation_msa
+msgid "Quotation ready (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_sale_order
+msgid "Quotations & Sales Orders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_app
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Raseel WhatsApp"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.actions.server,name:raseel_whatsapp.ir_cron_raseel_wa_daily_ir_actions_server
+msgid "Raseel WhatsApp: payment reminders and list actions"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__current_partner_id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__partner_id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__partner_id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__partner_id
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Recipient"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__res_ids
+msgid "Records"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__pending_count
+msgid "Remaining"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_res_config_settings__raseel_wa_remind_interval
+msgid "Remind Again After (days)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.document,name:raseel_whatsapp.doc_repair_order
+msgid "Repair Orders"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_reporting
+msgid "Reporting"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__save_template
+msgid "Save as my template"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+msgid "Select at least one document."
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+msgid "Send a WhatsApp payment reminder"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/models/base.py:0
+#: code:addons/raseel_whatsapp/models/raseel_wa_document.py:0
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+#: model:ir.actions.act_window,name:raseel_whatsapp.action_raseel_wa_composer
+#: model:ir.model,name:raseel_whatsapp.model_raseel_wa_composer
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid "Send by WhatsApp"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__state__send
+msgid "Sending"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__sent_count
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk_line__state__sent
+msgid "Sent"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__user_id
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Sent By"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__source
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Sent From"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.actions.act_window,name:raseel_whatsapp.action_raseel_wa_message_list
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_sent
+msgid "Sent Messages"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__date
+msgid "Sent On"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_form
+msgid "Sent WhatsApp Message"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_list
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Sent WhatsApp Messages"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__sequence
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__sequence
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_template__user_id
+msgid ""
+"Set: a personal template, visible and editable only by this user. Empty: a "
+"shared template available to everyone."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.actions.act_window,name:raseel_whatsapp.action_raseel_wa_settings
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_settings
+msgid "Settings"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk__state__setup
+msgid "Setup"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_search
+msgid "Shared"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_form
+msgid "Shared with everyone"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+msgid "Single"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__source__single
+msgid "Single message"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__message_key
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_template__key
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_search
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_search
+msgid "Situation"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_bulk_view_form
+msgid "Skip"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__skipped_count
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk_line__state__skipped
+msgid "Skipped"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__source
+msgid "Source"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__state
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__state
+msgid "State"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_stats
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Statistics"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_document__model_name
+msgid "Technical Model"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_template__model_name
+msgid ""
+"Technical model this template is meant for (account.move, sale.order...). "
+"Leave empty to offer it on every document."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_document__model_name
+msgid ""
+"Technical name of the model, e.g. account.move, sale.order, crm.lead or any "
+"custom model."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_bulk__res_ids
+msgid "Technical: comma separated ids to prepare."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__template_id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__template_id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__template_id
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_message__template_id
+msgid "Template"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__new_template_name
+msgid "Template Name"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.ui.menu,name:raseel_whatsapp.menu_raseel_wa_templates_root
+msgid "Templates"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.res_config_settings_view_form_raseel_wa
+msgid "Templates & documents"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__received
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__received
+msgid "Thank you after receipt"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_message__message_key__invoice_paid
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_template__key__invoice_paid
+msgid "Thank you for your payment"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_paid_en
+msgid "Thank you for your payment (English)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_paid_gulf
+msgid "Thank you for your payment (Gulf)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:raseel.wa.template,name:raseel_whatsapp.tpl_invoice_paid_msa
+msgid "Thank you for your payment (formal)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_document__is_installed
+msgid "The application providing this document is installed."
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+msgid ""
+"The invoice is overdue: open it and use the WhatsApp button to remind the "
+"customer."
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_composer.py:0
+msgid "The message is empty."
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_bulk.py:0
+msgid "The selected documents no longer exist."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_bulk_line__state__pending
+msgid "To send"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_list
+msgid "Total"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid "Type your message..."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_template__key
+msgid ""
+"Used to pick the right template automatically (e.g. an overdue invoice gets "
+"the payment reminder)."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,help:raseel_whatsapp.field_raseel_wa_composer__country_code
+msgid "Used when the number is typed without its country code."
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__current_phone_valid
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk_line__phone_valid
+msgid "Valid Number"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/models/base.py:0
+msgid "WhatsApp"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model,name:raseel_whatsapp.model_raseel_wa_bulk
+msgid "WhatsApp Bulk Sending"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model,name:raseel_whatsapp.model_raseel_wa_bulk_line
+msgid "WhatsApp Bulk Sending - Message"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model,name:raseel_whatsapp.model_raseel_wa_document
+msgid "WhatsApp Button - Enabled Document"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model,name:raseel_whatsapp.model_raseel_wa_template
+msgid "WhatsApp Message Template"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__wa_number
+msgid "WhatsApp Number"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model,name:raseel_whatsapp.model_raseel_wa_message
+msgid "WhatsApp Sent Message"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.actions.act_window,name:raseel_whatsapp.action_raseel_wa_message
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_graph
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_message_view_pivot
+msgid "WhatsApp Statistics"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_form
+msgid "WhatsApp Template"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.actions.act_window,name:raseel_whatsapp.action_raseel_wa_template
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_list
+msgid "WhatsApp Templates"
+msgstr ""
+
+#. module: raseel_whatsapp
+#. odoo-python
+#: code:addons/raseel_whatsapp/wizard/raseel_wa_composer.py:0
+msgid "WhatsApp message sent to"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__current_phone_display
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_composer__phone_display
+msgid "Will be sent to"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields,field_description:raseel_whatsapp.field_raseel_wa_bulk__invalid_count
+msgid "Without a valid number"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.actions.act_window,help:raseel_whatsapp.action_raseel_wa_template_mine
+msgid "Write your own WhatsApp messages"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_form
+msgid "account.move"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_open_mode__api
+msgid "api.whatsapp.com (compatibility)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_template_view_form
+msgid "e.g. Invoice ready"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model_terms:ir.ui.view,arch_db:raseel_whatsapp.raseel_wa_composer_view_form
+msgid "e.g. My friendly reminder"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ac
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ac
+msgid "🇦🇨 Ascension Island"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ad
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ad
+msgid "🇦🇩 Andorra"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ae
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ae
+msgid "🇦🇪 United Arab Emirates"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__af
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__af
+msgid "🇦🇫 Afghanistan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ag
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ag
+msgid "🇦🇬 Antigua & Barbuda"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ai
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ai
+msgid "🇦🇮 Anguilla"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__al
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__al
+msgid "🇦🇱 Albania"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__am
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__am
+msgid "🇦🇲 Armenia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ao
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ao
+msgid "🇦🇴 Angola"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ar
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ar
+msgid "🇦🇷 Argentina"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__as
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__as
+msgid "🇦🇸 American Samoa"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__at
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__at
+msgid "🇦🇹 Austria"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__au
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__au
+msgid "🇦🇺 Australia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__aw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__aw
+msgid "🇦🇼 Aruba"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ax
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ax
+msgid "🇦🇽 Åland Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__az
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__az
+msgid "🇦🇿 Azerbaijan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ba
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ba
+msgid "🇧🇦 Bosnia & Herzegovina"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bb
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bb
+msgid "🇧🇧 Barbados"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bd
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bd
+msgid "🇧🇩 Bangladesh"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__be
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__be
+msgid "🇧🇪 Belgium"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bf
+msgid "🇧🇫 Burkina Faso"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bg
+msgid "🇧🇬 Bulgaria"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bh
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bh
+msgid "🇧🇭 Bahrain"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bi
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bi
+msgid "🇧🇮 Burundi"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bj
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bj
+msgid "🇧🇯 Benin"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bl
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bl
+msgid "🇧🇱 St. Barthélemy"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bm
+msgid "🇧🇲 Bermuda"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bn
+msgid "🇧🇳 Brunei"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bo
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bo
+msgid "🇧🇴 Bolivia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bq
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bq
+msgid "🇧🇶 Caribbean Netherlands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__br
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__br
+msgid "🇧🇷 Brazil"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bs
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bs
+msgid "🇧🇸 Bahamas"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bt
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bt
+msgid "🇧🇹 Bhutan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bw
+msgid "🇧🇼 Botswana"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__by
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__by
+msgid "🇧🇾 Belarus"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__bz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__bz
+msgid "🇧🇿 Belize"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ca
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ca
+msgid "🇨🇦 Canada"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cc
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cc
+msgid "🇨🇨 Cocos (Keeling) Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cd
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cd
+msgid "🇨🇩 Congo - Kinshasa"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cf
+msgid "🇨🇫 Central African Republic"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cg
+msgid "🇨🇬 Congo - Brazzaville"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ch
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ch
+msgid "🇨🇭 Switzerland"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ci
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ci
+msgid "🇨🇮 Côte d’Ivoire"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ck
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ck
+msgid "🇨🇰 Cook Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cl
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cl
+msgid "🇨🇱 Chile"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cm
+msgid "🇨🇲 Cameroon"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cn
+msgid "🇨🇳 China"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__co
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__co
+msgid "🇨🇴 Colombia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cr
+msgid "🇨🇷 Costa Rica"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cu
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cu
+msgid "🇨🇺 Cuba"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cv
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cv
+msgid "🇨🇻 Cape Verde"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cw
+msgid "🇨🇼 Curaçao"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cx
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cx
+msgid "🇨🇽 Christmas Island"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cy
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cy
+msgid "🇨🇾 Cyprus"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__cz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__cz
+msgid "🇨🇿 Czechia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__de
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__de
+msgid "🇩🇪 Germany"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__dj
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__dj
+msgid "🇩🇯 Djibouti"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__dk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__dk
+msgid "🇩🇰 Denmark"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__dm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__dm
+msgid "🇩🇲 Dominica"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__do
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__do
+msgid "🇩🇴 Dominican Republic"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__dz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__dz
+msgid "🇩🇿 Algeria"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ec
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ec
+msgid "🇪🇨 Ecuador"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ee
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ee
+msgid "🇪🇪 Estonia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__eg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__eg
+msgid "🇪🇬 Egypt"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__eh
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__eh
+msgid "🇪🇭 Western Sahara"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__er
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__er
+msgid "🇪🇷 Eritrea"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__es
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__es
+msgid "🇪🇸 Spain"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__et
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__et
+msgid "🇪🇹 Ethiopia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__fi
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__fi
+msgid "🇫🇮 Finland"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__fj
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__fj
+msgid "🇫🇯 Fiji"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__fk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__fk
+msgid "🇫🇰 Falkland Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__fm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__fm
+msgid "🇫🇲 Micronesia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__fo
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__fo
+msgid "🇫🇴 Faroe Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__fr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__fr
+msgid "🇫🇷 France"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ga
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ga
+msgid "🇬🇦 Gabon"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gb
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gb
+msgid "🇬🇧 United Kingdom"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gd
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gd
+msgid "🇬🇩 Grenada"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ge
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ge
+msgid "🇬🇪 Georgia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gf
+msgid "🇬🇫 French Guiana"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gg
+msgid "🇬🇬 Guernsey"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gh
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gh
+msgid "🇬🇭 Ghana"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gi
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gi
+msgid "🇬🇮 Gibraltar"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gl
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gl
+msgid "🇬🇱 Greenland"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gm
+msgid "🇬🇲 Gambia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gn
+msgid "🇬🇳 Guinea"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gp
+msgid "🇬🇵 Guadeloupe"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gq
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gq
+msgid "🇬🇶 Equatorial Guinea"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gr
+msgid "🇬🇷 Greece"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gt
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gt
+msgid "🇬🇹 Guatemala"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gu
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gu
+msgid "🇬🇺 Guam"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gw
+msgid "🇬🇼 Guinea-Bissau"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__gy
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__gy
+msgid "🇬🇾 Guyana"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__hk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__hk
+msgid "🇭🇰 Hong Kong SAR China"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__hn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__hn
+msgid "🇭🇳 Honduras"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__hr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__hr
+msgid "🇭🇷 Croatia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ht
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ht
+msgid "🇭🇹 Haiti"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__hu
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__hu
+msgid "🇭🇺 Hungary"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__id
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__id
+msgid "🇮🇩 Indonesia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ie
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ie
+msgid "🇮🇪 Ireland"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__il
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__il
+msgid "🇮🇱 Israel"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__im
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__im
+msgid "🇮🇲 Isle of Man"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__in
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__in
+msgid "🇮🇳 India"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__io
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__io
+msgid "🇮🇴 British Indian Ocean Territory"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__iq
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__iq
+msgid "🇮🇶 Iraq"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ir
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ir
+msgid "🇮🇷 Iran"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__is
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__is
+msgid "🇮🇸 Iceland"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__it
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__it
+msgid "🇮🇹 Italy"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__je
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__je
+msgid "🇯🇪 Jersey"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__jm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__jm
+msgid "🇯🇲 Jamaica"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__jo
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__jo
+msgid "🇯🇴 Jordan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__jp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__jp
+msgid "🇯🇵 Japan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ke
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ke
+msgid "🇰🇪 Kenya"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__kg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__kg
+msgid "🇰🇬 Kyrgyzstan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__kh
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__kh
+msgid "🇰🇭 Cambodia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ki
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ki
+msgid "🇰🇮 Kiribati"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__km
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__km
+msgid "🇰🇲 Comoros"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__kn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__kn
+msgid "🇰🇳 St. Kitts & Nevis"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__kp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__kp
+msgid "🇰🇵 North Korea"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__kr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__kr
+msgid "🇰🇷 South Korea"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__kw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__kw
+msgid "🇰🇼 Kuwait"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ky
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ky
+msgid "🇰🇾 Cayman Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__kz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__kz
+msgid "🇰🇿 Kazakhstan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__la
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__la
+msgid "🇱🇦 Laos"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__lb
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__lb
+msgid "🇱🇧 Lebanon"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__lc
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__lc
+msgid "🇱🇨 St. Lucia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__li
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__li
+msgid "🇱🇮 Liechtenstein"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__lk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__lk
+msgid "🇱🇰 Sri Lanka"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__lr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__lr
+msgid "🇱🇷 Liberia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ls
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ls
+msgid "🇱🇸 Lesotho"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__lt
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__lt
+msgid "🇱🇹 Lithuania"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__lu
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__lu
+msgid "🇱🇺 Luxembourg"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__lv
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__lv
+msgid "🇱🇻 Latvia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ly
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ly
+msgid "🇱🇾 Libya"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ma
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ma
+msgid "🇲🇦 Morocco"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mc
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mc
+msgid "🇲🇨 Monaco"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__md
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__md
+msgid "🇲🇩 Moldova"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__me
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__me
+msgid "🇲🇪 Montenegro"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mf
+msgid "🇲🇫 St. Martin"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mg
+msgid "🇲🇬 Madagascar"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mh
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mh
+msgid "🇲🇭 Marshall Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mk
+msgid "🇲🇰 North Macedonia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ml
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ml
+msgid "🇲🇱 Mali"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mm
+msgid "🇲🇲 Myanmar (Burma)"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mn
+msgid "🇲🇳 Mongolia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mo
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mo
+msgid "🇲🇴 Macao SAR China"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mp
+msgid "🇲🇵 Northern Mariana Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mq
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mq
+msgid "🇲🇶 Martinique"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mr
+msgid "🇲🇷 Mauritania"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ms
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ms
+msgid "🇲🇸 Montserrat"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mt
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mt
+msgid "🇲🇹 Malta"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mu
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mu
+msgid "🇲🇺 Mauritius"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mv
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mv
+msgid "🇲🇻 Maldives"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mw
+msgid "🇲🇼 Malawi"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mx
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mx
+msgid "🇲🇽 Mexico"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__my
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__my
+msgid "🇲🇾 Malaysia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__mz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__mz
+msgid "🇲🇿 Mozambique"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__na
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__na
+msgid "🇳🇦 Namibia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__nc
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__nc
+msgid "🇳🇨 New Caledonia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ne
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ne
+msgid "🇳🇪 Niger"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__nf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__nf
+msgid "🇳🇫 Norfolk Island"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ng
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ng
+msgid "🇳🇬 Nigeria"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ni
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ni
+msgid "🇳🇮 Nicaragua"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__nl
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__nl
+msgid "🇳🇱 Netherlands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__no
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__no
+msgid "🇳🇴 Norway"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__np
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__np
+msgid "🇳🇵 Nepal"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__nr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__nr
+msgid "🇳🇷 Nauru"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__nu
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__nu
+msgid "🇳🇺 Niue"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__nz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__nz
+msgid "🇳🇿 New Zealand"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__om
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__om
+msgid "🇴🇲 Oman"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pa
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pa
+msgid "🇵🇦 Panama"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pe
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pe
+msgid "🇵🇪 Peru"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pf
+msgid "🇵🇫 French Polynesia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pg
+msgid "🇵🇬 Papua New Guinea"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ph
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ph
+msgid "🇵🇭 Philippines"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pk
+msgid "🇵🇰 Pakistan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pl
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pl
+msgid "🇵🇱 Poland"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pm
+msgid "🇵🇲 St. Pierre & Miquelon"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pr
+msgid "🇵🇷 Puerto Rico"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ps
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ps
+msgid "🇵🇸 Palestinian Territories"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pt
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pt
+msgid "🇵🇹 Portugal"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__pw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__pw
+msgid "🇵🇼 Palau"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__py
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__py
+msgid "🇵🇾 Paraguay"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__qa
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__qa
+msgid "🇶🇦 Qatar"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__re
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__re
+msgid "🇷🇪 Réunion"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ro
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ro
+msgid "🇷🇴 Romania"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__rs
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__rs
+msgid "🇷🇸 Serbia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ru
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ru
+msgid "🇷🇺 Russia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__rw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__rw
+msgid "🇷🇼 Rwanda"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sa
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sa
+msgid "🇸🇦 Saudi Arabia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sb
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sb
+msgid "🇸🇧 Solomon Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sc
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sc
+msgid "🇸🇨 Seychelles"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sd
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sd
+msgid "🇸🇩 Sudan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__se
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__se
+msgid "🇸🇪 Sweden"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sg
+msgid "🇸🇬 Singapore"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sh
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sh
+msgid "🇸🇭 St. Helena"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__si
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__si
+msgid "🇸🇮 Slovenia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sj
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sj
+msgid "🇸🇯 Svalbard & Jan Mayen"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sk
+msgid "🇸🇰 Slovakia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sl
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sl
+msgid "🇸🇱 Sierra Leone"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sm
+msgid "🇸🇲 San Marino"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sn
+msgid "🇸🇳 Senegal"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__so
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__so
+msgid "🇸🇴 Somalia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sr
+msgid "🇸🇷 Suriname"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ss
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ss
+msgid "🇸🇸 South Sudan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__st
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__st
+msgid "🇸🇹 São Tomé & Príncipe"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sv
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sv
+msgid "🇸🇻 El Salvador"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sx
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sx
+msgid "🇸🇽 Sint Maarten"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sy
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sy
+msgid "🇸🇾 Syria"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__sz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__sz
+msgid "🇸🇿 Eswatini"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ta
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ta
+msgid "🇹🇦 Tristan da Cunha"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tc
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tc
+msgid "🇹🇨 Turks & Caicos Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__td
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__td
+msgid "🇹🇩 Chad"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tg
+msgid "🇹🇬 Togo"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__th
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__th
+msgid "🇹🇭 Thailand"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tj
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tj
+msgid "🇹🇯 Tajikistan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tk
+msgid "🇹🇰 Tokelau"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tl
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tl
+msgid "🇹🇱 Timor-Leste"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tm
+msgid "🇹🇲 Turkmenistan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tn
+msgid "🇹🇳 Tunisia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__to
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__to
+msgid "🇹🇴 Tonga"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tr
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tr
+msgid "🇹🇷 Türkiye"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tt
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tt
+msgid "🇹🇹 Trinidad & Tobago"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tv
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tv
+msgid "🇹🇻 Tuvalu"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tw
+msgid "🇹🇼 Taiwan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__tz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__tz
+msgid "🇹🇿 Tanzania"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ua
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ua
+msgid "🇺🇦 Ukraine"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ug
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ug
+msgid "🇺🇬 Uganda"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__us
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__us
+msgid "🇺🇸 United States"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__uy
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__uy
+msgid "🇺🇾 Uruguay"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__uz
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__uz
+msgid "🇺🇿 Uzbekistan"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__va
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__va
+msgid "🇻🇦 Vatican City"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__vc
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__vc
+msgid "🇻🇨 St. Vincent & Grenadines"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ve
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ve
+msgid "🇻🇪 Venezuela"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__vg
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__vg
+msgid "🇻🇬 British Virgin Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__vi
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__vi
+msgid "🇻🇮 U.S. Virgin Islands"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__vn
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__vn
+msgid "🇻🇳 Vietnam"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__vu
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__vu
+msgid "🇻🇺 Vanuatu"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__wf
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__wf
+msgid "🇼🇫 Wallis & Futuna"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ws
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ws
+msgid "🇼🇸 Samoa"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__xk
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__xk
+msgid "🇽🇰 Kosovo"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__ye
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__ye
+msgid "🇾🇪 Yemen"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__yt
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__yt
+msgid "🇾🇹 Mayotte"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__za
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__za
+msgid "🇿🇦 South Africa"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__zm
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__zm
+msgid "🇿🇲 Zambia"
+msgstr ""
+
+#. module: raseel_whatsapp
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__raseel_wa_composer__country_code__zw
+#: model:ir.model.fields.selection,name:raseel_whatsapp.selection__res_config_settings__raseel_wa_default_country__zw
+msgid "🇿🇼 Zimbabwe"
+msgstr ""

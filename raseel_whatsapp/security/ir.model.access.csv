@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_raseel_wa_template_user,raseel.wa.template user,model_raseel_wa_template,base.group_user,1,1,1,1
+access_raseel_wa_template_admin,raseel.wa.template admin,model_raseel_wa_template,base.group_system,1,1,1,1
+access_raseel_wa_document_user,raseel.wa.document user,model_raseel_wa_document,base.group_user,1,0,0,0
+access_raseel_wa_document_admin,raseel.wa.document admin,model_raseel_wa_document,base.group_system,1,1,1,1
+access_raseel_wa_message_user,raseel.wa.message user,model_raseel_wa_message,base.group_user,1,0,0,0
+access_raseel_wa_message_admin,raseel.wa.message admin,model_raseel_wa_message,base.group_system,1,0,0,1
+access_raseel_wa_composer_user,raseel.wa.composer user,model_raseel_wa_composer,base.group_user,1,1,1,1
+access_raseel_wa_bulk_user,raseel.wa.bulk user,model_raseel_wa_bulk,base.group_user,1,1,1,1
+access_raseel_wa_bulk_line_user,raseel.wa.bulk.line user,model_raseel_wa_bulk_line,base.group_user,1,1,1,1
