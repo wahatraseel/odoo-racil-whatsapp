@@ -1,6 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_racil_wa_template_user,racil.wa.template user,model_racil_wa_template,base.group_user,1,0,0,0
-access_racil_wa_template_admin,racil.wa.template admin,model_racil_wa_template,base.group_system,1,1,1,1
-access_racil_wa_document_user,racil.wa.document user,model_racil_wa_document,base.group_user,1,0,0,0
-access_racil_wa_document_admin,racil.wa.document admin,model_racil_wa_document,base.group_system,1,1,1,1
-access_racil_wa_composer_user,racil.wa.composer user,model_racil_wa_composer,base.group_user,1,1,1,1
